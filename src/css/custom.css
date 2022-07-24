@@ -23,7 +23,7 @@ html {
 /* ___________________ Commons ___________________ */
 
 section{
-    padding: 50px;
+    padding: 10px;
     margin: 20px 0;
 }
 
@@ -49,10 +49,6 @@ section{
     .text-mid{
         font-size: 30px ;
     }
-
-    section{
-        padding: 20px;
-    }
 }
 
 @media only screen and (max-width: 767px){
@@ -62,10 +58,6 @@ section{
 
     .text-mid{
         font-size: 20px ;
-    }
-
-    section{
-        padding: 10px;
     }
 }
 
@@ -354,11 +346,13 @@ span.li-item{
 
 /* ______________________ Apply_Form _________________ */
 
-#apply-page{
+#apply-page,
+#faq-page{
     margin-top: 90px;
 }
 
-#apply-form{
+#apply-form,
+#faq{
     background-color: white;
     font-size: 22px;
     margin-top: 30px ;
@@ -394,22 +388,12 @@ span.li-item{
     font-size: 0;
 }
 
+#apply-form .form-item > .form-input[type="date"]:focus{
+    font-size: inherit;
+}
+
 #apply-form .form-item > .form-input:hover{
     border-bottom: 2px solid var(--sky-color) ;
-}
-
-#apply-form .form-item > .form-input:focus {
-    box-shadow: none;
-    border-bottom: solid 2px white;
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-    border-bottom: 3px solid var(--sky-color);
-    outline: none;
-}
-
-#apply-form .form-item > .form-input:focus ~ label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
 }
 
 .form-check {
@@ -440,4 +424,59 @@ span.li-item{
         padding: 20px;
         border: 8px solid var(--purple-color);
     }
+}
+
+/* ______________________ FAQ _________________ */
+
+#faq-page{
+    color: var(--purple-color);
+}
+
+.quetion-box {
+    margin-bottom: 20px;
+}
+
+.quetion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quetion-header .toggel-icon{
+    position: relative;
+    /* padding: 13.5px 19.1px; */
+    width: 50px;
+    height: 60px;
+    margin: 10px;
+    overflow: visible;
+    color: white;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/filled-hexagon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quetion-header .toggel-icon::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100%);
+    left: 3px;
+    top: 6px;
+    background-image: url('/images/hexagon\ \(3\).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quetion-box .answer{
+    transition: all 150ms ease-in-out;
+    width: 90%;
+    font-size: 16px;
+    font-weight: bold;
 }
