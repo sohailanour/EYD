@@ -446,10 +446,9 @@ span.li-item{
 
 .quetion-header .toggel-icon{
     position: relative;
-    /* padding: 13.5px 19.1px; */
-    width: 50px;
+    min-width: 50px;
     height: 60px;
-    margin: 10px;
+    margin: 15px;
     overflow: visible;
     color: white;
     display: flex;
@@ -480,4 +479,27 @@ span.li-item{
     width: 90%;
     font-size: 16px;
     font-weight: bold;
+}
+
+.answer ul li{
+    list-style : disc;
+    margin-left: 30px;
+    margin: 10px 0px 10px 30px;
+}
+
+@media only screen and (max-width: 767px){
+
+    #faq .text-mid{
+        font-size: 16px ;
+    }
+
+    .quetion-box .answer{
+        font-size: 14px;
+    }
+
+    #apply-form,
+    #faq{
+        padding: 20px;
+        border: 5px solid var(--purple-color);
+    }
 }
