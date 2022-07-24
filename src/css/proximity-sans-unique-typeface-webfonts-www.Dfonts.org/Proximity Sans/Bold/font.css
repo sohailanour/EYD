@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Proximity-Bold';
+  src: url('Proximity-Bold.eot');
+  src: url('Proximity-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Proximity-Bold.ttf') format('truetype'),
+       url('Proximity-Bold.woff') format('woff'),
+       url('Proximity-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

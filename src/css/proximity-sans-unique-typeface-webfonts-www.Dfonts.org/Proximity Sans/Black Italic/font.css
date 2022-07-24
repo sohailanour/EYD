@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Proximity-Black_Italic';
+  src: url('Proximity-Black_Italic.eot');
+  src: url('Proximity-Black_Italic.eot?#iefix') format('embedded-opentype'),
+       url('Proximity-Black_Italic.ttf') format('truetype'),
+       url('Proximity-Black_Italic.woff') format('woff'),
+       url('Proximity-Black_Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
