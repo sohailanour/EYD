@@ -88,7 +88,7 @@ section{
     max-width: 290px;
   }
 
-  .navbar .lang-btn{
+  .navbar #lang-btn{
     background-color: var(--sky-color);
     font-size: 16PX;
     color: var(--baseline-color);

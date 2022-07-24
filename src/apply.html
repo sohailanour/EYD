@@ -11,14 +11,19 @@
 
         <nav class="navbar">
             <div class="inner-nav m-auto">    
-                <div class="flex">
-                    <button class="lang-btn flex justify-center items-center">
-                        <span>E</span>
+                <div class="flex items-center">
+
+                    <button  data-i18n-key="lang-btn" id="lang-btn" class=" flex justify-center items-center">
+                        ع        
                     </button>
+
                     <div class="collaps relative  w-8 mx-4"></div>
+                    
+                    <a class="text-black font-bold" href="/src/faq.html">FAQ</a>
+                    
                 </div>
     
-                <a href="/src/index.html" class="logo ">
+                <a href="/src/index.html" class="logo">
                     <img src="../images/TECHNOLOGY-LOGO_horizantal_Color.svg" alt="logo image" class="w-full">
                 </a>
             </div>
@@ -32,100 +37,100 @@
                         
                         <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4">
                             <div class="lg:col-span-2">
-                                <h2 class="text-mid color-sky ">General Information </h2>
+                                <h2 data-i18n-key="h2-apply" class="text-mid color-sky ">General Information </h2>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputName" />
-                                <label for="inputName">Name</label>
+                                <label data-i18n-key="input-name" for="inputName">Name</label>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputMobileNumber" />
-                                <label for="inputMobileNumber">Mobile Number</label>
+                                <label data-i18n-key="input-Mobile-Number" for="inputMobileNumber">Mobile Number</label>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputEmail" />
-                                <label for="inputEmail">Email</label>
+                                <label data-i18n-key="input-email" for="inputEmail">Email</label>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputNationality" />
-                                <label for="inputNationality">Nationality</label>
+                                <label data-i18n-key="input-nationality" for="inputNationality">Nationality</label>
                             </div>
 
                             <div class="relative mb-3 flex justify-between flex-wrap items-center">
-                                <label class="md:w-auto w-full">Professional Data</label>
+                                <label data-i18n-key="input-professional"  class="md:w-auto w-full">Professional Data</label>
                                 <div class=" form-check flex justify-center items-center p-2">
                                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="text-gray-800" for="inlineRadio1">Student</label>
+                                    <label data-i18n-key="input-student" class="text-gray-800" for="inlineRadio1">Student</label>
                                 </div>
                                 <div class=" form-check flex justify-center items-center p-2">
                                     <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class=" text-gray-800" for="inlineRadio2">Employee</label>
+                                    <label data-i18n-key="input-employee" class=" text-gray-800" for="inlineRadio2">Employee</label>
                                 </div>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="date" class="form-input transition"                
                                     id="inputBirthDate" name="date" />
-                                <label for="inputBirthDate">BirthDate <span class="ml-4">(DD/MM/YYYY)</span> </label>
+                                <label data-i18n-key="input-birthDate" for="inputBirthDate">BirthDate <span class="ml-4">(DD/MM/YYYY)</span> </label>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <select class="form-input trasition" aria-label="Country of Residence ">
-                                        <option className="text-gray-700" selected>Country of Residence</option>
-                                        <option className="text-gray-700" value="1">One</option>
-                                        <option className="text-gray-700" value="2">Two</option>
-                                        <option className="text-gray-700" value="3">Three</option>
+                                        <option data-i18n-key="input-countryRes" className="text-gray-700" selected>Country of Residence</option>
+                                        <option data-i18n-key="input-one" className="text-gray-700" value="1">One</option>
+                                        <option data-i18n-key="input-two" className="text-gray-700" value="2">Two</option>
+                                        <option data-i18n-key="input-three" className="text-gray-700" value="3">Three</option>
                                 </select>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <select class="form-input trasition" aria-label="City ">
-                                        <option className="text-gray-700" selected>City</option>
-                                        <option className="text-gray-700" value="1">One</option>
-                                        <option className="text-gray-700" value="2">Two</option>
-                                        <option className="text-gray-700" value="3">Three</option>
+                                        <option data-i18n-key="input-city" className="text-gray-700" selected>City</option>
+                                        <option data-i18n-key="input-c-one" className="text-gray-700" value="1">One</option>
+                                        <option data-i18n-key="input-c-two" className="text-gray-700" value="2">Two</option>
+                                        <option data-i18n-key="input-c-three" className="text-gray-700" value="3">Three</option>
                                 </select>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <select class="form-input trasition" aria-label="Country of Study ">
-                                        <option className="text-gray-700" selected>Country of Study</option>
-                                        <option className="text-gray-700" value="1">One</option>
-                                        <option className="text-gray-700" value="2">Two</option>
-                                        <option className="text-gray-700" value="3">Three</option>
+                                        <option data-i18n-key="input-CStudent" className="text-gray-700" selected>Country of Study</option>
+                                        <option data-i18n-key="input-cs-one" className="text-gray-700" value="1">One</option>
+                                        <option data-i18n-key="input-cs-two" className="text-gray-700" value="2">Two</option>
+                                        <option data-i18n-key="input-cs-three" className="text-gray-700" value="3">Three</option>
                                 </select>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputEducationalInstitution" />
-                                <label for="inputEducationalInstitution">Educational Institution</label>
+                                <label data-i18n-key="input-educationalIn" for="inputEducationalInstitution">Educational Institution</label>
                             </div>
                              
                             <div class="form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputEducationalLevel" />
-                                <label for="inputEducationalLevel">Educational Level</label>
+                                <label data-i18n-key="input-educationalLe" for="inputEducationalLevel">Educational Level</label>
                             </div>
 
                             <div class="form-item relative mb-3">
                                 <input type="date" class="form-input transition"                
                                     id="inputGarduationDate" name="date"  />
-                                <label for="inputGarduationDate">Garduation Date <span class="ml-4">(DD/MM/YYYY)</span></label>
+                                <label data-i18n-key="input-garduation" for="inputGarduationDate">Garduation Date <span class="ml-4">(DD/MM/YYYY)</span></label>
                             </div>
 
                             <div class="lg:col-span-2 form-item relative mb-3">
                                 <input type="text" class="form-input transition"                
                                     id="inputExplain" />
-                                <label for="inputExplain">Explain Why You Would Like To Join The Programme </label>
+                                <label data-i18n-key="input-explain" for="inputExplain">Explain Why You Would Like To Join The Programme </label>
                             </div>
 
                             <div>
@@ -139,6 +144,7 @@
             
         </section>
 
+        <script src="js/scripts.js"></script>
         <script src="/src/js/index.js"></script>
     </body>
 </html>

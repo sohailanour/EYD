@@ -21,15 +21,17 @@ window.onscroll = function () {
 let formInputs = document.querySelectorAll("input")
 
 function focusStyle(Input){
-    Input.style.paddingBottom = "0.625rem"
-    Input.style.paddingTop = "1.625rem"
-    Input.style.outline = "none"
-    const label =Input.nextElementSibling
-    console.log(label)
-    label.style.opacity = "0.65"
-    label.style.transform = "scale(0.85) translateY(-1rem) translateX(0.15rem)"
-    if(Input.type == "date"){
-        Input.style.fontSize= "inherit";
+    if(Input.type != "radio"){
+        Input.style.paddingBottom = "0.625rem"
+        Input.style.paddingTop = "1.625rem"
+        Input.style.outline = "none"
+        const label =Input.nextElementSibling
+        console.log(label)
+        label.style.opacity = "0.65"
+        label.style.transform = "scale(0.85) translateY(-1rem) translateX(0.15rem)"
+        if(Input.type == "date"){
+            Input.style.fontSize= "inherit";
+        }
     }
 }
 

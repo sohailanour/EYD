@@ -1,10 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
         <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
         <link href="/dist/output.css" rel="stylesheet">
         <link href="/src/css/custom.css" rel="stylesheet">
@@ -14,9 +13,11 @@
         <nav class="navbar">
             <div class="inner-nav m-auto">    
                 <div class="flex items-center">
-                    <button class="lang-btn flex justify-center items-center">
-                        <span>E</span>
+
+                    <button  data-i18n-key="lang-btn" id="lang-btn" class=" flex justify-center items-center">
+                        ع        
                     </button>
+
                     <div class="collaps relative  w-8 mx-4"></div>
                     
                     <a class="text-black font-bold" href="/src/faq.html">FAQ</a>
@@ -32,10 +33,10 @@
         <header id="main" class="w-full relative h-screen flex justify-center items-center">
             <div class="header-content">
                 <div>
-                    <h1 class="leading-tight large-text">
+                    <h1 data-i18n-key="app-title" class="leading-tight large-text">
                         Start a professional career in digital and technological industries
                     </h1>
-                    <p class="text-mid color-sky my-10">
+                    <p data-i18n-key="header-text" class="text-mid color-sky my-10">
                         The Arab Youth Center in the UAE, in cooperation with EYouth, offers a virtual training program
                     </p>
                 </div>
@@ -48,7 +49,7 @@
                     <button type="button" 
                     class="inline-block  uppercase rounded shadow-md hover:shadow-lg active:shadow-lg 
                         transition duration-150 ease-in-out">
-                        <a href="/src/apply.html">Apply Now</a>
+                        <a data-i18n-key="apply-btn" href="/src/apply.html">Apply Now</a>
                     </button>
                 </div>
             </div>
@@ -56,9 +57,9 @@
         
         <section id="about" class="">
             <div class="relative container m-auto text-center">
-                <h2 class="leading-tight large-text">about the project</h2>
-                <h3 class="color-sky text-mid font-semibold my-3">Call of the Project</h3>
-                <p class="text-mid">
+                <h2  data-i18n-key="h2-about"  class="leading-tight large-text">about the project</h2>
+                <h3  data-i18n-key="h3-about" class="color-sky text-mid font-semibold my-3">Call of the Project</h3>
+                <p  data-i18n-key="p-about" class="text-mid">
                     The “Arab Youth Technical Fellowship” program is concerned with providing young people with advanced skills 
                     to enable them economically through an integrated way that combines the theoretical and practical aspects 
                     according to the latest practices needed by the labor market to bridge the digital skills gap in various  
@@ -69,7 +70,7 @@
                 </p>
             </div>
             <div class="mx-10 mt-10">
-                <button class="circle-btn shadow-md hover:shadow-lg active:shadow-lg 
+                <button  data-i18n-key="apply-btn" class="circle-btn shadow-md hover:shadow-lg active:shadow-lg 
                     transition duration-150 ease-in-out">
                     Apply Now
                 </button>
@@ -78,12 +79,12 @@
 
         <section id="dates" >
             <div class="container m-auto text-center">
-                <h2 class="leading-tight large-text">Key Dates</h2>
-                <h3 class="color-sky text-mid font-semibold my-3">The Project Timetable</h3>
+                <h2  data-i18n-key="h2-dates" class="leading-tight large-text">Key Dates</h2>
+                <h3  data-i18n-key="h3-dates" class="color-sky text-mid font-semibold my-3">The Project Timetable</h3>
                 <div class="gap-8 grid md:grid-cols-3 place-items-center place-content-center my-12">        
                     <div class="inner-content">
                         <div class="hexagon">
-                            <p >8 <br>Auguste</p>
+                            <p >8 <br> <span data-i18n-key="mon1-dates">August</span> </p>
                             <div class="hexaon-outline ">
                                 <svg height="226" width="206">
                                     <polygon points="100 3,203 55,203 165, 100 220,3 165,3 55" 
@@ -92,26 +93,27 @@
                                 </svg>
                             </div>
                         </div>
-                        <p>starting</p>
+                        <p  data-i18n-key="p1-dates">starting</p>
                     </div>
                     
                     <div class="inner-content">
                         <div class="hexagon">
-                            <p >1 <br> September  </p>
+                            <p>1 <br> <span data-i18n-key="mon2-dates">September</span> </p>
                             <div class="hexaon-outline ">
                                 <svg height="226" width="206">
-                                    <polygon points="100 3,203 55,203 165, 100 220,3 165,3 55" 
+                                    <polygon  data-i18n-key=""olygon points="100 3,203 55,203 165, 100 220,3 165,3 55" 
                                     stroke="#BA354B" 
                                     fill="transparent"stroke-width="3" />
                                 </svg>
                             </div>
                         </div>
-                        <p>Selection Announced</p>
+    
+                        <p  data-i18n-key="p2-dates">Selection Announced</p>
                     </div>
 
                     <div class="inner-content">
                         <div class="hexagon">
-                            <p >5 <br>October  </p>
+                            <p >5 <br > <span data-i18n-key="mon3-dates" >October</span></p>
                             <div class="hexaon-outline ">
                                 <svg height="226" width="206">
                                     <polygon points="100 3,203 55,203 165, 100 220,3 165,3 55" 
@@ -120,7 +122,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <p>Applications Close</p>
+                        <p  data-i18n-key="p3-dates">Applications Close</p>
                     </div>                   
 
                 </div>
@@ -136,18 +138,18 @@
                         </div>
                     </div>
                     <div class="xl:col-span-2">
-                        <h2 class="leading-tight large-text">who can apply?</h2>
+                        <h2  data-i18n-key="h2-who" class="leading-tight large-text">who can apply?</h2>
                         <div>
                             <div class="flex items-center">
                                 <span class="li-item large-text">01</span>
-                                <p class="lg:text-2xl md:text-xl text-lg">
+                                <p  data-i18n-key="p1-who" class="lg:text-2xl md:text-xl text-lg">
                                     Youth aged 18-35 
                                 </p>
                             </div>
 
                             <div class="flex items-center">
                                 <span class="li-item large-text">02</span>
-                                <p class="lg:text-2xl md:text-xl text-lg">
+                                <p  data-i18n-key="p2-who" class="lg:text-2xl md:text-xl text-lg">
                                     Students majoring in related fields  
                                     Young professionals with basic knowledge of technical skills 
                                 </p>
@@ -155,21 +157,21 @@
 
                             <div class="flex items-center">
                                 <span class="li-item large-text">03</span>
-                                <p class="lg:text-2xl md:text-xl text-lg">
+                                <p  data-i18n-key="p3-who" class="lg:text-2xl md:text-xl text-lg">
                                     Young professionals with basic knowledge of technical skills technical skills
                                 </p>
                             </div>
 
                             <div class="flex items-center">
                                 <span class="li-item large-text">04</span>
-                                <p class="lg:text-2xl md:text-xl text-lg">
+                                <p  data-i18n-key="p4-who" class="lg:text-2xl md:text-xl text-lg">
                                     Young professionals within the technology industry 
                                 </p>
                             </div>
 
                             <div class="flex items-center">
                                 <span class="li-item large-text">05</span>
-                                <p class="lg:text-2xl md:text-xl text-lg">
+                                <p  data-i18n-key="p5-who" class="lg:text-2xl md:text-xl text-lg">
                                     Preference is given to those with initial knowledge of programming through PYTHON 
                                 </p>
                             </div>
@@ -182,17 +184,17 @@
         <section id="the-programe" >          
             <div class="grid lg:grid-cols-4 grid-cols-1 gap-6 items-center justify-items-center">
                 <div class="">
-                    <h2 class="leading-tight large-text">The Program</h2>
+                    <h2  data-i18n-key="h2-prog" class="leading-tight large-text">The Program</h2>
                 </div>
                 <div class="categories relative col-span-3">
                     <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 justify-items-center">
                         <div class="programe-box">
                             <div class="box-hover">
                                 <img src="/images/work.svg" alt="icon">
-                                <p>Job Opportunity </p>
+                                <p  data-i18n-key="p1-prog">Job Opportunity </p>
                             </div>
                             <div>
-                                <p>
+                                <p  data-i18n-key="p2-prog">
                                     Participants will receive assistance to find jobs with program partners by training them to create a resume and a professional account on linkedin.com.
                                 </p>
                             </div>
@@ -200,10 +202,10 @@
                         <div class="programe-box">
                             <div class="box-hover">
                                 <img src="/images/teacher.svg" alt="icon">
-                                <p>Professional Certificate</p>
+                                <p  data-i18n-key="p3-prog">Professional Trainers</p>
                             </div>
                             <div class="">
-                                <p>
+                                <p  data-i18n-key="p4-prog">
                                     Training will be provided by professional technology trainers and influential speakers in different fields
                                 </p>
                             </div>
@@ -211,10 +213,10 @@
                         <div class="programe-box">
                             <div class="box-hover">
                                 <img src="/images/certification.svg" alt="icon">
-                                <p>Free Program</p>
+                                <p  data-i18n-key="p5-prog">Free Program</p>
                             </div>
                             <div >
-                                <p>
+                                <p  data-i18n-key="p6-prog">
                                     The certificate provided for who successfully completed the program, and research are delivered 
                                     (the certificate is complementary to the academic certificate and is of interest to technology sector 
                                     institutions and companies).
@@ -224,10 +226,10 @@
                         <div class="programe-box">
                             <div class="box-hover">
                                 <img src="/images/free.svg" alt="icon">
-                                <p>Communication</p>
+                                <p  data-i18n-key="p7-prog">Professional Certificate</p>
                             </div>
                             <div >
-                                <p>
+                                <p  data-i18n-key="p8-prog">
                                     this is to develop their skills in programming and technology
                                 </p>
                             </div>
@@ -244,6 +246,7 @@
            
         </section>
 
+        <script src="js/scripts.js"></script>
         <script src="/src/js/index.js"></script>
     </body>
 </html>
