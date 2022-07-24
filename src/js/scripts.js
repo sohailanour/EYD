@@ -1,6 +1,8 @@
 // import '../lang/ar.json'
 
 // The locale our app first shows
+
+
 const defaultLocale = "en";
 let locale;
 
@@ -12,10 +14,14 @@ console.log(langBtn);
 langBtn.addEventListener("click", () =>{
     if(langBtn.innerHTML=="ع"){
         setLocale("ar")
-        document.body.style.direction = "rtl"
+        localStorage.setItem("lang", JSON.stringify("ar"));
+        document.body.style.direction = "rtl" ; 
+        document.body.style.fontFamily = " 'Noto Kufi Arabic', sans-serif";
     }else{
         setLocale("en") 
+        localStorage.setItem("lang", JSON.stringify("en"));
         document.body.style.direction = "ltr"
+        document.body.style.fontFamily = " 'Adobe Clean', sans-serif ";
     }
 })
 
@@ -27,7 +33,13 @@ let translations = {};
 // When the page content is ready...
 document.addEventListener("DOMContentLoaded", () => {
   // Translate the page to the default locale
-  setLocale(defaultLocale);
+  if (localStorage.getItem("lang") != null) {
+    setLocale(JSON.parse(localStorage.getItem("lang"))) ;
+    // console.log(loginEmail);
+  }else{
+    localStorage.setItem("lang", JSON.stringify(defaultLocale));
+    setLocale(defaultLocale);
+  }
 });
 
 // Load translations for the given locale and translate
