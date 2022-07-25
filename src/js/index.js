@@ -1,9 +1,9 @@
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 10,
     grid: {
-      rows: 3,
-      fill: 'column',
+      rows: 2,
+      fill: 'row',
     },
     autoplay: {
       delay: 3000,
@@ -202,21 +202,19 @@ if(window.location.href.includes("faq.html")){
         if(Array.isArray(answer)){
             ansContent = '<ul>'
             for(let j = 0; j < answer.length; j++){
-                ansContent += `<li>${answer[j]}</li>`
+                ansContent += `<li data-i18n-key="Ans-${i+1}-${j+1}" >${answer[j]}</li>`
             }
             ansContent += '</ul>'
         }else{
-            ansContent = answer
+            ansContent = `<p  data-i18n-key="Ans-${i+1}" >${answer}</p>`
         }
         faqContent += `<div class="quetion-box">
                             <div class="quetion-header ">
-                                <h3 class="text-mid">${quetionsLi[i].quetion}</h3>
+                                <h3 data-i18n-key="Q-${i+1}" class="text-mid">${quetionsLi[i].quetion}</h3>
                                 <div class="toggel-icon">+</div>
                             </div>
                             <div class="answer hidden">
-                                <p>
-                                    ${ansContent}
-                                </p>
+                                ${ansContent}
                             </div>
                         </div>`
     }

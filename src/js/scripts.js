@@ -10,18 +10,26 @@ const langBtn = document.getElementById("lang-btn")
 
 console.log(langBtn);
 
+function direcAR(){
+  document.body.style.direction = "rtl" ; 
+  document.body.style.fontFamily = " 'Noto Kufi Arabic', sans-serif";
+}
+
+function direcEn(){
+  document.body.style.direction = "rtl" ; 
+  document.body.style.fontFamily = " 'Noto Kufi Arabic', sans-serif";
+}
 
 langBtn.addEventListener("click", () =>{
     if(langBtn.innerHTML=="ع"){
         setLocale("ar")
         localStorage.setItem("lang", JSON.stringify("ar"));
-        document.body.style.direction = "rtl" ; 
-        document.body.style.fontFamily = " 'Noto Kufi Arabic', sans-serif";
+        direcAR()
+        
     }else{
         setLocale("en") 
         localStorage.setItem("lang", JSON.stringify("en"));
-        document.body.style.direction = "ltr"
-        document.body.style.fontFamily = " 'Adobe Clean', sans-serif ";
+        direcEn()
     }
 })
 
@@ -35,10 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Translate the page to the default locale
   if (localStorage.getItem("lang") != null) {
     setLocale(JSON.parse(localStorage.getItem("lang"))) ;
+    direcAR()
     // console.log(loginEmail);
   }else{
     localStorage.setItem("lang", JSON.stringify(defaultLocale));
     setLocale(defaultLocale);
+    direcEn()
   }
 });
 

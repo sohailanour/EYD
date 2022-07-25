@@ -518,6 +518,7 @@ span.li-item{
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    /* padding: 0 20px; */
   }
 
   .swiper-slide {
@@ -527,15 +528,25 @@ span.li-item{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25%;
-
+    max-width: 100%;
+    box-sizing: border-box;
     border: 1px solid #aaa;
-    /* background-size: cover; */
-    /* background-image: url('../../images/asset\ 16.png'); */
-    /* height: calc((100% - 30px) / 2); */
-    /* width: 33%; */
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
+  }
 
+
+  @media only screen and (max-width: 767px){
+    .swiper-slide {
+        height: 100px;
+    }
+    
+    .swiper{
+        width: 100%;
+    }
+
+    #partners{
+        background-color: white;
+        margin: 50px 10px ;
+        padding: 20px;
+    }
   }
 
