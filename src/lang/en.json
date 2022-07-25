@@ -53,5 +53,6 @@
     "input-educationalIn" : "Educational Institution",
     "input-educationalLe" : "Educational Level",
     "input-garduation" : "Garduation Date",
-    "input-explain" : "Explain Why You Would Like To Join The Programme"
+    "input-explain" : "Explain Why You Would Like To Join The Programme" ,
+    "h2-partners" : "partners"
 }

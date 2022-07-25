@@ -498,8 +498,44 @@ span.li-item{
     }
 
     #apply-form,
-    #faq{
+    #faq,
+    #partners{
         padding: 20px;
         border: 5px solid var(--purple-color);
     }
 }
+
+/* ______________________ Partners _________________ */
+#partners{
+    background-color: white;
+    margin: 50px ;
+    padding: 40px;
+    border: 10px solid var(--purple-color);
+}
+
+.swiper {
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+
+    border: 1px solid #aaa;
+    /* background-size: cover; */
+    /* background-image: url('../../images/asset\ 16.png'); */
+    /* height: calc((100% - 30px) / 2); */
+    /* width: 33%; */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+
+  }
+
