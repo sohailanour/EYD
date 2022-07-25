@@ -56,6 +56,19 @@ window.onscroll = function () {
     }
 }
 
+var btn = document.getElementsByClassName("collaps");
+   
+btn[0].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+        navbar.style.backgroundColor = "#fff"
+    }
+});
+
 // hidde input place holder
 let formInputs = document.querySelectorAll("input")
 
@@ -107,40 +120,89 @@ formInputs.forEach((Input => {
 
 // images array
 
-if(window.location.href.includes("index.html")){
+// if(window.location.href.includes("index.html")){
+//     let imgs = [
+//         '../../images/asset\ 16.png',
+//         '../../images/asset\ 20.jpeg',
+//         '../../images/asset\ 21.png',
+//         '../../images/asset\ 22.jpeg',
+//         '../../images/asset\ 23.jpeg',
+//         '../../images/asset\ 24.jpeg',
+//         '../../images/asset\ 25.png',
+//         '../../images/asset\ 26.jpeg',
+//         '../../images/asset\ 27.jpeg',
+//         '../../images/asset\ 28.png',
+//         '../../images/asset\ 29.jpeg',
+//         '../../images/asset\ 30.png',
+//         '../../images/asset\ 31.jpeg',
+//         '../../images/asset\ 32.jpeg',
+//         '../../images/asset\ 33.png',
+//         '../../images/asset\ 34.jpeg',
+//         '../../images/asset\ 35.png',
+//         '../../images/asset\ 36.jpeg',
+//         '../../images/asset\ 37.jpeg',
+//         '../../images/asset\ 38.jpeg',
+//         '../../images/asset\ 39.png',
+//         '../../images/asset\ 40.png',
+//         '../../images/asset\ 41.png',
+//         '../../images/asset\ 42.png',
+//         '../../images/asset\ 43.png',
+//         '../../images/asset\ 44.png',
+//         '../../images/asset\ 45.jpeg',
+//         '../../images/asset\ 46.jpeg',
+//         '../../images/asset\ 47.jpeg',
+//         '../../images/asset\ 48.jpeg',
+//         '../../images/asset\ 49.jpeg',
+//         '../../images/asset\ 50.jpeg',
+//     ]
+    
+//     let swiperDiv = document.getElementById("swiper-div")
+    
+//     imgs.forEach(imag => {
+//         let node = document.createElement("div");
+//         // node..backgroundImage = `url(${imag})`
+//         node.className = "swiper-slide"
+//         node.style.backgroundImage = `url('${imag}')`
+//         swiperDiv.appendChild(node)
+    
+//         // console.log(swiperDiv.lastChild)
+//     })
+// } 
+
+if(window.location.href.includes("index.html") || !window.location.href.includes("html")){
     let imgs = [
-        '../../images/asset\ 16.png',
-        '../../images/asset\ 20.jpeg',
-        '../../images/asset\ 21.png',
-        '../../images/asset\ 22.jpeg',
-        '../../images/asset\ 23.jpeg',
-        '../../images/asset\ 24.jpeg',
-        '../../images/asset\ 25.png',
-        '../../images/asset\ 26.jpeg',
-        '../../images/asset\ 27.jpeg',
-        '../../images/asset\ 28.png',
-        '../../images/asset\ 29.jpeg',
-        '../../images/asset\ 30.png',
-        '../../images/asset\ 31.jpeg',
-        '../../images/asset\ 32.jpeg',
-        '../../images/asset\ 33.png',
-        '../../images/asset\ 34.jpeg',
-        '../../images/asset\ 35.png',
-        '../../images/asset\ 36.jpeg',
-        '../../images/asset\ 37.jpeg',
-        '../../images/asset\ 38.jpeg',
-        '../../images/asset\ 39.png',
-        '../../images/asset\ 40.png',
-        '../../images/asset\ 41.png',
-        '../../images/asset\ 42.png',
-        '../../images/asset\ 43.png',
-        '../../images/asset\ 44.png',
-        '../../images/asset\ 45.jpeg',
-        '../../images/asset\ 46.jpeg',
-        '../../images/asset\ 47.jpeg',
-        '../../images/asset\ 48.jpeg',
-        '../../images/asset\ 49.jpeg',
-        '../../images/asset\ 50.jpeg',
+        './images/asset\ 16.png',
+        './images/asset\ 20.jpeg',
+        './images/asset\ 21.png',
+        './images/asset\ 22.jpeg',
+        './images/asset\ 23.jpeg',
+        './images/asset\ 24.jpeg',
+        './images/asset\ 25.png',
+        './images/asset\ 26.jpeg',
+        './images/asset\ 27.jpeg',
+        './images/asset\ 28.png',
+        './images/asset\ 29.jpeg',
+        './images/asset\ 30.png',
+        './images/asset\ 31.jpeg',
+        './images/asset\ 32.jpeg',
+        './images/asset\ 33.png',
+        './images/asset\ 34.jpeg',
+        './images/asset\ 35.png',
+        './images/asset\ 36.jpeg',
+        './images/asset\ 37.jpeg',
+        './images/asset\ 38.jpeg',
+        './images/asset\ 39.png',
+        './images/asset\ 40.png',
+        './images/asset\ 41.png',
+        './images/asset\ 42.png',
+        './images/asset\ 43.png',
+        './images/asset\ 44.png',
+        './images/asset\ 45.jpeg',
+        './images/asset\ 46.jpeg',
+        './images/asset\ 47.jpeg',
+        './images/asset\ 48.jpeg',
+        './images/asset\ 49.jpeg',
+        './images/asset\ 50.jpeg',
     ]
     
     let swiperDiv = document.getElementById("swiper-div")
