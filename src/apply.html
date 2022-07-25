@@ -1,162 +1,169 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- arabic fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <!-- english fonts -->
-        <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
 
-        <!-- swiper  -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- arabic fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- english fonts -->
+    <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
 
-        <!-- styles -->
-        <link href="../dist/output.css" rel="stylesheet">
-        <link href="./css/custom.css" rel="stylesheet">
-    </head>
-    <body>
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-        <nav class="navbar">
-            <div class="inner-nav m-auto">    
-                <div class="flex items-center">
+    <!-- styles -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
 
-                    <button  data-i18n-key="lang-btn" id="lang-btn" class=" flex justify-center items-center">
-                        ع        
-                    </button>
+<body>
 
-                    <div class="collaps relative  w-8 mx-4"></div>
-                    
-                    <a class="text-black font-bold" href="./faq.html">FAQ</a>
-                    
-                </div>
-    
-                <a href="./index.html" class="logo">
-                    <img src="../images/TECHNOLOGY-LOGO_horizantal_Color.svg" alt="logo image" class="w-full">
-                </a>
+    <nav class="navbar">
+        <div class="inner-nav m-auto">
+            <div class="flex items-center">
+
+                <button data-i18n-key="lang-btn" id="lang-btn" class=" flex justify-center items-center">
+                    ع
+                </button>
+
+                <div class="collaps relative  w-8 mx-4"></div>
+
+                <a class="text-black font-bold" href="./faq.html">FAQ</a>
+
             </div>
-        </nav>
 
-        <section id="apply-page">
-            <div class="md:container m-auto">
-                <h2 data-i18n-key="apply-btn" class="large-text text-center">Apply Now</h2>
-                <div id="apply-form">
-                    <div class="apply-form">
-                        
-                        <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4">
-                            <div class="lg:col-span-2">
-                                <h2 data-i18n-key="h2-apply" class="text-mid color-sky ">General Information </h2>
-                            </div>
+            <a href="./index.html" class="logo">
+                <img src="../images/TECHNOLOGY-LOGO_horizantal_Color.svg" alt="logo image" class="w-full">
+            </a>
+        </div>
+    </nav>
 
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputName" />
-                                <label data-i18n-key="input-name" for="inputName">Name</label>
-                            </div>
+    <section id="apply-page">
+        <div class="md:container m-auto">
+            <h2 data-i18n-key="apply-btn" class="large-text text-center">Apply Now</h2>
+            <form id="apply-form" action="registerDone.html">
+                <div class="apply-form">
+                    <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4">
+                        <div class="lg:col-span-2">
+                            <h2 data-i18n-key="h2-apply" class="text-mid color-sky ">General Information </h2>
+                        </div>
 
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputMobileNumber" />
-                                <label data-i18n-key="input-Mobile-Number" for="inputMobileNumber">Mobile Number</label>
-                            </div>
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputName" />
+                            <label data-i18n-key="input-name" for="inputName">Name</label>
+                        </div>
 
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputEmail" />
-                                <label data-i18n-key="input-email" for="inputEmail">Email</label>
-                            </div>
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputMobileNumber" />
+                            <label data-i18n-key="input-Mobile-Number" for="inputMobileNumber">Mobile Number</label>
+                        </div>
 
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputNationality" />
-                                <label data-i18n-key="input-nationality" for="inputNationality">Nationality</label>
-                            </div>
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputEmail" />
+                            <label data-i18n-key="input-email" for="inputEmail">Email</label>
+                        </div>
 
-                            <div class="relative mb-3 flex justify-between flex-wrap items-center">
-                                <label data-i18n-key="input-professional"  class="md:w-auto w-full">Professional Data</label>
-                                <div class=" form-check flex justify-center items-center p-2">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label data-i18n-key="input-student" class="text-gray-800" for="inlineRadio1">Student</label>
-                                </div>
-                                <div class=" form-check flex justify-center items-center p-2">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label data-i18n-key="input-employee" class=" text-gray-800" for="inlineRadio2">Employee</label>
-                                </div>
-                            </div>
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputNationality" />
+                            <label data-i18n-key="input-nationality" for="inputNationality">Nationality</label>
+                        </div>
 
-                            <div class="form-item relative mb-3">
-                                <input type="date" class="form-input transition"                
-                                    id="inputBirthDate" name="date" />
-                                <label data-i18n-key="input-birthDate" for="inputBirthDate">BirthDate <span class="ml-4">(DD/MM/YYYY)</span> </label>
+                        <div class="relative mb-3 flex justify-between flex-wrap items-center">
+                            <label data-i18n-key="input-professional" class="md:w-auto w-full">Professional Data</label>
+                            <div class=" form-check flex justify-center items-center p-2">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label data-i18n-key="input-student" class="text-gray-800"
+                                    for="inlineRadio1">Student</label>
                             </div>
-
-                            <div class="form-item relative mb-3">
-                                <select class="form-input trasition" aria-label="Country of Residence ">
-                                        <option data-i18n-key="input-countryRes" className="text-gray-700" selected>Country of Residence</option>
-                                        <option data-i18n-key="input-one" className="text-gray-700" value="1">One</option>
-                                        <option data-i18n-key="input-two" className="text-gray-700" value="2">Two</option>
-                                        <option data-i18n-key="input-three" className="text-gray-700" value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="form-item relative mb-3">
-                                <select class="form-input trasition" aria-label="City ">
-                                        <option data-i18n-key="input-city" className="text-gray-700" selected>City</option>
-                                        <option data-i18n-key="input-c-one" className="text-gray-700" value="1">One</option>
-                                        <option data-i18n-key="input-c-two" className="text-gray-700" value="2">Two</option>
-                                        <option data-i18n-key="input-c-three" className="text-gray-700" value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="form-item relative mb-3">
-                                <select class="form-input trasition" aria-label="Country of Study ">
-                                        <option data-i18n-key="input-CStudent" className="text-gray-700" selected>Country of Study</option>
-                                        <option data-i18n-key="input-cs-one" className="text-gray-700" value="1">One</option>
-                                        <option data-i18n-key="input-cs-two" className="text-gray-700" value="2">Two</option>
-                                        <option data-i18n-key="input-cs-three" className="text-gray-700" value="3">Three</option>
-                                </select>
-                            </div>
-
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputEducationalInstitution" />
-                                <label data-i18n-key="input-educationalIn" for="inputEducationalInstitution">Educational Institution</label>
-                            </div>
-                             
-                            <div class="form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputEducationalLevel" />
-                                <label data-i18n-key="input-educationalLe" for="inputEducationalLevel">Educational Level</label>
-                            </div>
-
-                            <div class="form-item relative mb-3">
-                                <input type="date" class="form-input transition"                
-                                    id="inputGarduationDate" name="date"  />
-                                <label data-i18n-key="input-garduation" for="inputGarduationDate">Garduation Date <span class="ml-4">(DD/MM/YYYY)</span></label>
-                            </div>
-
-                            <div class="lg:col-span-2 form-item relative mb-3">
-                                <input type="text" class="form-input transition"                
-                                    id="inputExplain" />
-                                <label data-i18n-key="input-explain" for="inputExplain">Explain Why You Would Like To Join The Programme </label>
-                            </div>
-
-                            <div>
-                                <img src="" alt="">
+                            <div class=" form-check flex justify-center items-center p-2">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label data-i18n-key="input-employee" class=" text-gray-800"
+                                    for="inlineRadio2">Employee</label>
                             </div>
                         </div>
+
+                        <div class="form-item relative mb-3">
+                            <input type="date" class="form-input transition" id="inputBirthDate" name="date" />
+                            <label data-i18n-key="input-birthDate" for="inputBirthDate">BirthDate <span
+                                    class="ml-4">(DD/MM/YYYY)</span> </label>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <select class="form-input trasition" aria-label="Country of Residence ">
+                                <option data-i18n-key="input-countryRes" className="text-gray-700" selected>Country of
+                                    Residence</option>
+                                <option data-i18n-key="input-one" className="text-gray-700" value="1">One</option>
+                                <option data-i18n-key="input-two" className="text-gray-700" value="2">Two</option>
+                                <option data-i18n-key="input-three" className="text-gray-700" value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <select class="form-input trasition" aria-label="City ">
+                                <option data-i18n-key="input-city" className="text-gray-700" selected>City</option>
+                                <option data-i18n-key="input-c-one" className="text-gray-700" value="1">One</option>
+                                <option data-i18n-key="input-c-two" className="text-gray-700" value="2">Two</option>
+                                <option data-i18n-key="input-c-three" className="text-gray-700" value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <select class="form-input trasition" aria-label="Country of Study ">
+                                <option data-i18n-key="input-CStudent" className="text-gray-700" selected>Country of
+                                    Study</option>
+                                <option data-i18n-key="input-cs-one" className="text-gray-700" value="1">One</option>
+                                <option data-i18n-key="input-cs-two" className="text-gray-700" value="2">Two</option>
+                                <option data-i18n-key="input-cs-three" className="text-gray-700" value="3">Three
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputEducationalInstitution" />
+                            <label data-i18n-key="input-educationalIn" for="inputEducationalInstitution">Educational
+                                Institution</label>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputEducationalLevel" />
+                            <label data-i18n-key="input-educationalLe" for="inputEducationalLevel">Educational
+                                Level</label>
+                        </div>
+
+                        <div class="form-item relative mb-3">
+                            <input type="date" class="form-input transition" id="inputGarduationDate" name="date" />
+                            <label data-i18n-key="input-garduation" for="inputGarduationDate">Garduation Date <span
+                                    class="ml-4">(DD/MM/YYYY)</span></label>
+                        </div>
+
+                        <div class="lg:col-span-2 form-item relative mb-3">
+                            <input type="text" class="form-input transition" id="inputExplain" />
+                            <label data-i18n-key="input-explain" for="inputExplain">Explain Why You Would Like To Join
+                                The Programme </label>
+                        </div>
+
+                        <div>
+                            <img src="" alt="">
+                        </div>
                     </div>
+                    <input type="submit" value="Submit" data-i18n-key="apply-btn" class="circle-btn shadow-md hover:shadow-lg active:shadow-lg 
+                    transition duration-150 ease-in-out">
                 </div>
-            </div>
+            </form>
+        </div>
 
-            
-        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script src="./js/index.js"></script>
-        <script src="./js/scripts.js"></script>
+    </section>
 
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
 </html>
