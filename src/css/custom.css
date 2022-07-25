@@ -1,63 +1,63 @@
-
 /* @import url('https://fonts.googleapis.com/css?family=Proxima+Nova'); */
 
 /* ___________________ Variables ___________________ */
-:root{
-    --sky-color : #75d3dd;
-    --baseline-color : #fbfbfb ;
-    --brrown-color : #e8853e ;
-    --purple-color : #2e2d54 ;
+:root {
+    --sky-color: #75d3dd;
+    --baseline-color: #fbfbfb;
+    --brrown-color: #e8853e;
+    --purple-color: #2e2d54;
 }
 
 /* ___________________ body ___________________ */
 body {
     background-size: 50px 50px;
-    background-image: linear-gradient(to right, rgb(236,236,236) 1px, transparent 1px), 
-                    linear-gradient(to bottom, rgb(236,236,236) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgb(236, 236, 236) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(236, 236, 236) 1px, transparent 1px);
     font-family: 'Adobe Clean', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 /* ___________________ Commons ___________________ */
 
-section{
+section {
     padding: 10px;
     margin: 20px 0;
 }
 
-.large-text{
+.large-text {
     font-size: 55px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.text-mid{
+.text-mid {
     font-size: 36px;
 }
 
-.color-sky{
+.color-sky {
     color: var(--sky-color);
 }
 
-@media only screen and (max-width: 992px){
-    .large-text{
+@media only screen and (max-width: 992px) {
+    .large-text {
         font-size: 40px;
     }
 
-    .text-mid{
-        font-size: 30px ;
+    .text-mid {
+        font-size: 30px;
     }
 }
 
-@media only screen and (max-width: 767px){
-    .large-text{
+@media only screen and (max-width: 767px) {
+    .large-text {
         font-size: 28px;
     }
 
-    .text-mid{
-        font-size: 20px ;
+    .text-mid {
+        font-size: 20px;
     }
 }
 
@@ -73,48 +73,49 @@ section{
     overflow: hidden;
     transition: 1s;
     /* background-color: aqua; */
-  }
-  
-  .navbar .inner-nav {
+}
+
+.navbar .inner-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     min-height: 100px;
-  }
+}
 
-  .navbar .logo{
+.navbar .logo {
     padding-right: 5vw;
     max-width: 290px;
-  }
+}
 
-  .navbar #lang-btn{
+.navbar #lang-btn {
     background-color: var(--sky-color);
     font-size: 16PX;
     color: var(--baseline-color);
     width: 40px;
     height: 40px;
-  }
+}
 
-  .collaps::before,
-  .collaps::after{
+.collaps::before,
+.collaps::after {
     content: "";
     width: 100%;
     height: 3px;
     position: absolute;
     top: calc(50% - 3px);
     background-color: var(--sky-color);
-  }
-
-  .collaps::after {
-    top: calc(50% + 3px);
-  }
-
-  @media only screen and (max-width: 767px){
-    .navbar .logo{
-        width: 200px;
-      }
 }
+
+.collaps::after {
+    top: calc(50% + 3px);
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar .logo {
+        width: 200px;
+    }
+}
+
 /* ___________________ Header ___________________*/
 
 /* header{
@@ -128,12 +129,12 @@ section{
     background-repeat: no-repeat;
 }
 
-.header-content .shapes{
+.header-content .shapes {
     width: 150px;
     margin: 100px auto 30px;
 }
 
-.header-content button{
+.header-content button {
     background-color: #75d3dd;
     color: var(--baseline-color);
     font-size: 24px;
@@ -142,13 +143,13 @@ section{
 
 .header-content button:hover,
 .header-content button:focus,
-.header-content button:active{
+.header-content button:active {
     background-color: #59d5e2;
 }
 
 /* ___________________ About ___________________*/
 
-.circle-btn{
+.circle-btn {
     width: 150px;
     height: 150px;
     font-size: 35px;
@@ -157,11 +158,11 @@ section{
     border-radius: 50%;
 }
 
-.circle-btn:hover{
+.circle-btn:hover {
     background-color: #e26d1a;
 }
 
-#about div:first-child::before{
+#about div:first-child::before {
     content: "";
     position: absolute;
     top: 10%;
@@ -174,7 +175,7 @@ section{
     transform: rotate(-10deg);
 }
 
-#about div:first-child::after{
+#about div:first-child::after {
     content: "";
     position: absolute;
     right: 10%;
@@ -185,29 +186,30 @@ section{
 }
 
 @media only screen and (max-width: 767px) {
-    .circle-btn{
+    .circle-btn {
         width: 60px;
         height: 60px;
         font-size: 14px;
     }
 
-    #about div:first-child::before{
+    #about div:first-child::before {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 30px solid var(--purple-color);
     }
-    
-    #about div:first-child::after{
+
+    #about div:first-child::after {
         width: 25px;
         height: 25px;
     }
 }
 
 /* ___________________ Dates ___________________*/
-#dates .inner-content{
+#dates .inner-content {
     font-size: 30px;
     font-weight: 700;
 }
+
 .hexagon {
     width: 200px;
     height: 110px;
@@ -217,30 +219,32 @@ section{
     font-size: 30px;
     font-weight: 700;
 }
+
 .hexagon::before {
-content: "";
-position: absolute;
-top: -55px;
-left: 0;
-width: 0;
-height: 0;
-border-left: 100px solid transparent;
-border-right: 100px solid transparent;
-border-bottom: 55px solid var(--brrown-color);
-}
-.hexagon::after {
-content: "";
-position: absolute;
-bottom: -55px;
-left: 0;
-width: 0;
-height: 0;
-border-left: 100px solid transparent;
-border-right: 100px solid transparent;
-border-top: 55px solid var(--brrown-color);
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 55px solid var(--brrown-color);
 }
 
-.hexaon-outline{
+.hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 55px solid var(--brrown-color);
+}
+
+.hexaon-outline {
     position: absolute;
     z-index: 99999;
     top: -40px;
@@ -249,12 +253,12 @@ border-top: 55px solid var(--brrown-color);
 
 /* ___________________ Who-can-apply ___________________*/
 
-#who-can-apply .box{
+#who-can-apply .box {
     outline: 5px solid #2e2d54;
     /* background-color: #4b4b4b; */
 }
 
-span.li-item{
+span.li-item {
     color: var(--brrown-color);
     font-weight: 400;
     padding: 0px 10px;
@@ -269,7 +273,7 @@ span.li-item{
     /* margin: 0 auto; */
 }
 
-.programe-box div{
+.programe-box div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -285,11 +289,11 @@ span.li-item{
     /* background-color: var(--purple-color); */
 }
 
-.programe-box .box-hover > *{
+.programe-box .box-hover>* {
     padding: 5px;
 }
 
-.programe-box .box-hover{
+.programe-box .box-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -297,30 +301,30 @@ span.li-item{
     background-color: var(--purple-color);
     font-weight: 600;
     opacity: 1;
-    transition: all 300ms ease-in-out ;
+    transition: all 300ms ease-in-out;
 }
 
-.programe-box:hover .box-hover{
+.programe-box:hover .box-hover {
     opacity: 0;
 }
 
-.programe-box img{
+.programe-box img {
     width: 177px;
 }
 
-.categories{
+.categories {
     position: relative;
     z-index: 50;
     margin: 30px 10px;
 }
 
-.hexa-icon{
+.hexa-icon {
     position: absolute;
     width: 20%;
     top: 0;
     right: 0;
     z-index: -1;
-    transform: translate(20%,-50%);
+    transform: translate(20%, -50%);
     animation-name: rotate;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -330,40 +334,45 @@ span.li-item{
 }
 
 @keyframes rotate {
-    0% {transform: translate(20%,-50%) rotate(0deg) ;}
-    100% {transform: translate(20%,-50%) rotate(360deg) ;}
-  }
+    0% {
+        transform: translate(20%, -50%) rotate(0deg);
+    }
 
-  .circle-icon{
+    100% {
+        transform: translate(20%, -50%) rotate(360deg);
+    }
+}
+
+.circle-icon {
     position: absolute;
     width: 50%;
     top: 0;
     left: 0;
     z-index: -1;
-    transform: translate(-55%,60%);
+    transform: translate(-55%, 60%);
 
 }
 
 /* ______________________ Apply_Form _________________ */
 
 #apply-page,
-#faq-page{
+#faq-page {
     margin-top: 90px;
 }
 
 #apply-form,
-#faq{
+#faq {
     background-color: white;
     font-size: 22px;
-    margin-top: 30px ;
+    margin-top: 30px;
     padding: 40px;
     border: 10px solid var(--purple-color);
 }
 
-#apply-form .form-item > label {
+#apply-form .form-item>label {
     position: absolute;
     top: 0;
-    left: 0 ;
+    left: 0;
     width: 100%;
     height: 100%;
     font-size: inherit;
@@ -374,7 +383,7 @@ span.li-item{
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
-#apply-form .form-item > .form-input {
+#apply-form .form-item>.form-input {
     width: 100%;
     display: block;
     font-size: inherit;
@@ -385,16 +394,16 @@ span.li-item{
     background-color: transparent;
 }
 
-#apply-form .form-item > .form-input[type="date"]{
+#apply-form .form-item>.form-input[type="date"] {
     font-size: 0;
 }
 
-#apply-form .form-item > .form-input[type="date"]:focus{
+#apply-form .form-item>.form-input[type="date"]:focus {
     font-size: inherit;
 }
 
-#apply-form .form-item > .form-input:hover{
-    border-bottom: 2px solid var(--sky-color) ;
+#apply-form .form-item>.form-input:hover {
+    border-bottom: 2px solid var(--sky-color);
 }
 
 .form-check {
@@ -402,26 +411,26 @@ span.li-item{
     font-size: 18px;
 }
 
-.form-check input{
+.form-check input {
     width: 18px;
     height: 18px;
     appearance: none;
     border-radius: 50%;
     border: var(--purple-color) 5px solid;
     background-color: var(--purple-color);
-    transition: all 200mls ;
+    transition: all 200mls;
     cursor: pointer;
     margin-right: 0.5rem;
 }
 
-.form-check input:checked{
+.form-check input:checked {
     background-color: var(--sky-color);
 }
 
-@media only screen and (max-width: 767px){
-    #apply-form{
+@media only screen and (max-width: 767px) {
+    #apply-form {
         font-size: 18px;
-        margin-top: 30px ;
+        margin-top: 30px;
         padding: 20px;
         border: 8px solid var(--purple-color);
     }
@@ -429,7 +438,7 @@ span.li-item{
 
 /* ______________________ FAQ _________________ */
 
-#faq-page{
+#faq-page {
     color: var(--purple-color);
 }
 
@@ -444,7 +453,7 @@ span.li-item{
     cursor: pointer;
 }
 
-.quetion-header .toggel-icon{
+.quetion-header .toggel-icon {
     position: relative;
     min-width: 50px;
     height: 60px;
@@ -461,7 +470,7 @@ span.li-item{
     background-repeat: no-repeat;
 }
 
-.quetion-header .toggel-icon::after{
+.quetion-header .toggel-icon::after {
     content: "";
     position: absolute;
     width: calc(100% + 4px);
@@ -474,41 +483,41 @@ span.li-item{
     background-repeat: no-repeat;
 }
 
-.quetion-box .answer{
+.quetion-box .answer {
     transition: all 150ms ease-in-out;
     width: 90%;
     font-size: 16px;
     font-weight: bold;
 }
 
-.answer ul li{
-    list-style : disc;
+.answer ul li {
+    list-style: disc;
     margin-left: 30px;
     margin: 10px 0px 10px 30px;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
-    #faq .text-mid{
-        font-size: 16px ;
+    #faq .text-mid {
+        font-size: 16px;
     }
 
-    .quetion-box .answer{
+    .quetion-box .answer {
         font-size: 14px;
     }
 
     #apply-form,
     #faq,
-    #partners{
+    #partners {
         padding: 20px;
         border: 5px solid var(--purple-color);
     }
 }
 
 /* ______________________ Partners _________________ */
-#partners{
+#partners {
     background-color: white;
-    margin: 50px ;
+    margin: 50px;
     padding: 40px;
     border: 10px solid var(--purple-color);
 }
@@ -519,9 +528,9 @@ span.li-item{
     margin-left: auto;
     margin-right: auto;
     /* padding: 0 20px; */
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     height: 150px;
@@ -531,22 +540,25 @@ span.li-item{
     max-width: 100%;
     box-sizing: border-box;
     border: 1px solid #aaa;
-  }
+}
 
 
-  @media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     .swiper-slide {
         height: 100px;
     }
-    
-    .swiper{
+
+    .swiper {
         width: 100%;
     }
 
-    #partners{
+    #partners {
         background-color: white;
-        margin: 50px 10px ;
+        margin: 50px 10px;
         padding: 20px;
     }
-  }
+}
 
+.colored-text {
+    color: #2e2d54;
+}
